@@ -21,11 +21,10 @@ document.getElementById('adForm').addEventListener('submit', function(event) {
 
 function sendInterest(adTitle) {
     const name = prompt('Adja meg a nevét:');
-    const address = prompt('Adja meg a címét:');
-    const phone = prompt('Adja meg a telefonszámát:');
+    const address = prompt('Adja meg az email címét:');
 
     if (name && address && phone) {
-        const mailtoLink = `mailto:iskolaiemail@example.com?subject=Érdeklődés: ${encodeURIComponent(adTitle)}&body=Név: ${encodeURIComponent(name)}%0ACím: ${encodeURIComponent(address)}%0ATelefonszám: ${encodeURIComponent(phone)}`;
+        const mailtoLink = `mailto:gabben878@hengersor.hu?subject=Érdeklődés: ${encodeURIComponent(adTitle)}&body=Név: ${encodeURIComponent(name)}%0ACím: ${encodeURIComponent(address)}%0ATelefonszám: ${encodeURIComponent(phone)}`;
         window.location.href = mailtoLink;
     } else {
         alert('Kérjük, töltsön ki minden mezőt az érdeklődéshez!');

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
@@ -10,11 +11,33 @@
         <h1>Hirdetési oldal</h1>
     </header>
     <main>
-        <section id="ads">
-            <div class="ad">
-                <h3>Eladó bicikli</h3>
-                <p>Kiváló állapotban lévő kerékpár eladó. Ár: 50 000 Ft.</p>
-                <button onclick="sendInterest('Eladó bicikli')">Érdeklődöm</button>
+        <section id="ads" class="card-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="ingatlan képe">
+                <div class="card-content">
+                    <h3>Eladó ingatlan</h3>
+                    <p>alapterület: 92 m2</p>
+                    <p>Kiváló állapotban. Ár: 50 000 Ft.</p>
+                    <button onclick="sendInterest('Eladó ingatlan')">Érdeklődöm</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="ingatlan képe">
+                <div class="card-content">
+                    <h3>Eladó ingatlan</h3>
+                    <p>alapterület: 75 m2</p>
+                    <p>Kiváló állapotban lévő laptop eladó. Ár: 150 000 Ft.</p>
+                    <button onclick="sendInterest('Eladó ingatlan')">Érdeklődöm</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="ingatlan képe">
+                <div class="card-content">
+                    <h3>Eladó ingatlan</h3>
+                    <p>alapterület: 69 m2</p>
+                    <p>Újszerű állapotban. Ár: 80 000 Ft.</p>
+                    <button onclick="sendInterest('Eladó ingatlan')">Érdeklődöm</button>
+                </div>
             </div>
         </section>
 
@@ -22,6 +45,7 @@
             <h2>Új hirdetés felvitele</h2>
             <input type="text" id="title" placeholder="Hirdetés címe" required>
             <textarea id="description" rows="4" placeholder="Hirdetés leírása" required></textarea>
+            <input type="url" id="image" placeholder="Kép URL" required>
             <button type="submit">Hirdetés hozzáadása</button>
         </form>
     </main>
