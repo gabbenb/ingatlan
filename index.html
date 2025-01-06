@@ -1,0 +1,31 @@
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirdetési oldal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hirdetési oldal</h1>
+    </header>
+    <main>
+        <section id="ads">
+            <div class="ad">
+                <h3>Eladó bicikli</h3>
+                <p>Kiváló állapotban lévő kerékpár eladó. Ár: 50 000 Ft.</p>
+                <button onclick="sendInterest('Eladó bicikli')">Érdeklődöm</button>
+            </div>
+        </section>
+
+        <form id="adForm">
+            <h2>Új hirdetés felvitele</h2>
+            <input type="text" id="title" placeholder="Hirdetés címe" required>
+            <textarea id="description" rows="4" placeholder="Hirdetés leírása" required></textarea>
+            <button type="submit">Hirdetés hozzáadása</button>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
